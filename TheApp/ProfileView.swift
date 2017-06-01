@@ -127,7 +127,7 @@ class ProfileView: UIView {
     }
     
     func hideImageSrollView(){
-        UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseOut, animations: {
+        UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseOut, animations: {
             self.imageScrollViewTopAnchor?.constant = 1000
             self.layoutIfNeeded()
         }) { (completed) in
@@ -138,7 +138,7 @@ class ProfileView: UIView {
     
     
     func showNavBar(){
-       UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseOut, animations: {
+       UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseOut, animations: {
         self.navBarViewTopAnchor?.constant = 0
         self.layoutIfNeeded()
        }) { (completed) in

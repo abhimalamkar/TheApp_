@@ -28,7 +28,7 @@ class TopSlideMenu: UIView {
         return button
     }()
     
-    func handleRightButton(){
+    func handleRightButton() {
         print("Right Working")
         delegate?.handleMessageController()
     }

@@ -158,11 +158,11 @@ class MainScene: SKScene , SKPhysicsContactDelegate{
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         let touch = touches.first!
-        //        for sprite in (nodes?)!? {
-        //            if sprite.contains(touch.location(in: self)) {
-        //                print(sprite.name)
-        //            }
-        //        }
+//                for sprite in nodes {
+//                    if sprite.contains(touch.location(in: self)) {
+//                        print(sprite.name as Any)
+//                    }
+//                }
         
         for t in touches { self.touchDown(atPoint: t.location(in: self)) }
     }

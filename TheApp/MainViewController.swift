@@ -277,13 +277,13 @@ class MainViewController: UIViewController, ProfileTransition,MainMenuDelegate {
     
     // The Pan Gesture
     func createPanGestureRecognizer() {
-        var panGesture = UIPanGestureRecognizer(target: self, action: #selector(handlePanGesture))
+        let panGesture = UIPanGestureRecognizer(target: self, action: #selector(handlePanGesture))
         self.view.addGestureRecognizer(panGesture)
     }
     
     func handlePanGesture(panGesture: UIPanGestureRecognizer) {
         // get translation
-        var translation = panGesture.translation(in: view)
+        let translation = panGesture.translation(in: view)
         panGesture.setTranslation(CGPoint.zero, in: view)
         print(translation)
         

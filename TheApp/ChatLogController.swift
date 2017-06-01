@@ -30,6 +30,7 @@ class ChatLogController: UICollectionViewController, UITextFieldDelegate ,UIColl
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
